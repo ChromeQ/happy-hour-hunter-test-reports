@@ -1,19 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Snapshots - All Passing</title>
+  <title>Image Snapshots - 1 failed</title>
   <link rel="stylesheet" href="report.css">
 </head>
-
 <body>
-  <header class="success">
-    <h1>All Image Snapshots Passing</h1>
-    <div class="meta">Generated: 2/7/2026, 7:22:47 AM</div>
+  <header>
+    <h1>Image Snapshot Failures</h1>
+    <div class="meta">
+      <strong>1</strong> test failed |
+      Generated: 2/7/2026, 8:17:15 AM
+    </div>
+    <div class="update-hint">
+      <strong>To update snapshots:</strong> Run <code>vitest -u</code>
+    </div>
   </header>
-  
-</body>
 
+  <table>
+    <thead>
+      <tr>
+        <th>Test</th>
+        <th>Expected</th>
+        <th>Actual</th>
+        <th>Diff</th>
+        <th>Mismatch</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="test-name">
+          <strong>createImages Visual Test &gt; generated image with four drink types and prices</strong><br>
+          <code>createImages Visual Test &gt; generated image with four drink types and prices - instagram</code>
+        </td>
+        <td class="image-cell">
+          <a href="src/utils/__image_snapshots__/createImages Visual Test > generated image with four drink types and prices - instagram.png" target="_blank">
+            <img src="src/utils/__image_snapshots__/createImages Visual Test > generated image with four drink types and prices - instagram.png" alt="Expected" />
+          </a>
+          <div class="label">Expected</div>
+        </td>
+        <td class="image-cell">
+          <a href="src/utils/__image_actual__/createImages Visual Test > generated image with four drink types and prices - instagram.png" target="_blank">
+            <img src="src/utils/__image_actual__/createImages Visual Test > generated image with four drink types and prices - instagram.png" alt="Actual" />
+          </a>
+          <div class="label">Actual</div>
+        </td>
+        <td class="image-cell">
+          <a href="src/utils/__image_diffs__/createImages Visual Test > generated image with four drink types and prices - instagram.png" target="_blank">
+            <img src="src/utils/__image_diffs__/createImages Visual Test > generated image with four drink types and prices - instagram.png" alt="Diff" />
+          </a>
+          <div class="label">Diff</div>
+        </td>
+        <td class="stats">
+          <div><strong>110219</strong> pixels</div>
+          <div><strong>5.32%</strong></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <footer>
+    Click images to view full size |
+    Diff images highlight mismatched pixels in yellow/red
+  </footer>
+
+</body>
 </html>
